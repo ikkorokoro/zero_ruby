@@ -6,3 +6,6 @@ p menu[:"モカ"]
 
 menu[:tea] = 300
 puts menu
+
+#6-2
+menu.delete(:coffee_latte)
