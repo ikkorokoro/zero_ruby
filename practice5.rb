@@ -9,3 +9,4 @@ puts menu
 
 #6-2
 menu.delete(:coffee_latte)
+p menu
