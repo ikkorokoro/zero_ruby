@@ -52,3 +52,11 @@ end
 
 puts price2(item: "カフェラテ")
 puts price2(item: "コーヒー")
+
+def price2(item:, size:)
+  items = {"カフェラテ" => 400, "コーヒー" => 200}
+  items[item]
+end
+
+puts price2(item: "カフェラテ")
+puts price2(item: "コーヒー")
