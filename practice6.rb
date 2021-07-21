@@ -32,7 +32,7 @@ def already_once＿dice
   return number
 end
 puts already_once＿dice
-
+#7-4　問６
 def price(item:)
   case item
   when "カフェラテ"
@@ -44,7 +44,7 @@ end
 
 puts price(item: "カフェラテ")
 puts price(item: "コーヒー")
-
+#7-4　問６
 def price2(item:)
   items = {"カフェラテ" => 400, "コーヒー" => 200}
   items[item]
@@ -52,11 +52,33 @@ end
 
 puts price2(item: "カフェラテ")
 puts price2(item: "コーヒー")
-
-def price2(item:, size:)
+#7-4　問７
+def price3(item:, size:)
   items = {"カフェラテ" => 400, "コーヒー" => 200}
-  items[item]
+  sizes = {"ショート" => 0, "トール" => 50, "ベンティ" => 100}
+  items[item] + sizes[size]
 end
 
-puts price2(item: "カフェラテ")
-puts price2(item: "コーヒー")
+puts price3(item: "カフェラテ", size: "ショート")
+puts price3(item: "コーヒー", size: "トール")
+puts price3(item: "コーヒー", size: "ベンティ")
+
+#7-4　問8
+def price4(item:, size: "ショート")
+  items = {"カフェラテ" => 400, "コーヒー" => 200}
+  sizes = {"ショート" => 0, "トール" => 50, "ベンティ" => 100}
+  items[item] + sizes[size]
+end
+
+puts price4(item: "カフェラテ")
+puts price4(item: "コーヒー", size: "トール")
+puts price4(item: "コーヒー", size: "ベンティ")
+
+#7-5　問9
+def order 
+  drink = "コーヒー"
+  puts "#{drink}をください"
+end
+
+order
+
