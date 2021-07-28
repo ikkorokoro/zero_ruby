@@ -74,7 +74,7 @@ puts price4(item: "カフェラテ")
 puts price4(item: "コーヒー", size: "トール")
 puts price4(item: "コーヒー", size: "ベンティ")
 
-#7-5　問9
+#7-5問9
 def order 
   drink = "コーヒー"
   puts "#{drink}をください"
