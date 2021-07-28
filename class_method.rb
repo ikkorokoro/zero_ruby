@@ -1,4 +1,8 @@
 class Cafe 
+  def initialize
+    "カフェ"
+  end
+
   def self.welcome 
     "よろしくお願い致します"
   end
@@ -10,3 +14,7 @@ class Cafe
 end
 
 Cafe.welcome_return
+
+cafe = Cafe.new
+
+puts cafe.class.new
