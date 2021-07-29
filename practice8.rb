@@ -45,3 +45,20 @@ end
 
 puts Drink.todays_special
 
+
+
+class Item 
+  def initialize(name)
+    @name = name
+  end
+
+  def name
+    @name
+  end
+
+end
+
+item3 =Item.new("カフェラテ")
+puts item3.name
+item4 = Item.new("スコーン")
+puts item4.name
