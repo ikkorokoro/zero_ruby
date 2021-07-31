@@ -62,3 +62,11 @@ item3 =Item.new("カフェラテ")
 puts item3.name
 item4 = Item.new("スコーン")
 puts item4.name
+
+class Fire
+  def flame_radiation
+    return 1.5 * 100
+  end
+end
+fire = Fire.new
+fire.flame_radiation
